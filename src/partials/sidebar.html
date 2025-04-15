@@ -203,6 +203,210 @@
           </li>
           <!-- Menu Item Profile -->
 
+          <!-- Menu Item Tugas -->
+          <li>
+            <a
+              href="tugas.html"
+              @click="selected = (selected === 'Tugas' ? '':'Tugas')"
+              class="menu-item group"
+              :class=" (selected === 'Tugas') && (page === 'tugas') ? 'menu-item-active' : 'menu-item-inactive'"
+            >
+              <svg
+                :class="(selected === 'Tugas') && (page === 'tugas') ? 'menu-item-icon-active' : 'menu-item-icon-inactive'"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.75 5.5C4.75 4.25736 5.75736 3.25 7 3.25H17C18.2426 3.25 19.25 4.25736 19.25 5.5V18.5C19.25 19.7426 18.2426 20.75 17 20.75H7C5.75736 20.75 4.75 19.7426 4.75 18.5V5.5ZM7 4.75C6.58579 4.75 6.25 5.08579 6.25 5.5V18.5C6.25 18.9142 6.58579 19.25 7 19.25H17C17.4142 19.25 17.75 18.9142 17.75 18.5V5.5C17.75 5.08579 17.4142 4.75 17 4.75H7ZM8.75 7.75C8.75 7.33579 9.08579 7 9.5 7H14.5C14.9142 7 15.25 7.33579 15.25 7.75C15.25 8.16421 14.9142 8.5 14.5 8.5H9.5C9.08579 8.5 8.75 8.16421 8.75 7.75ZM8.75 11.25C8.75 10.8358 9.08579 10.5 9.5 10.5H14.5C14.9142 10.5 15.25 10.8358 15.25 11.25C15.25 11.6642 14.9142 12 14.5 12H9.5C9.08579 12 8.75 11.6642 8.75 11.25Z"
+                  fill=""
+                />
+              </svg>
+
+              <span
+                class="menu-item-text"
+                :class="sidebarToggle ? 'lg:hidden' : ''"
+              >
+                Tugas
+              </span>
+            </a>
+          </li>
+          <!-- Menu Item Tugas -->
+
+          <!-- Menu Item Data Pengepul -->
+          <li>
+            <a
+              href="data-pengepul.html"
+              @click="selected = (selected === 'DataPengepul' ? '':'DataPengepul')"
+              class="menu-item group"
+              :class=" (selected === 'DataPengepul') && (page === 'dataPengepul') ? 'menu-item-active' : 'menu-item-inactive'"
+            >
+              <svg
+                :class="(selected === 'DataPengepul') && (page === 'dataPengepul') ? 'menu-item-icon-active' : 'menu-item-icon-inactive'"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 3.25C5.75736 3.25 4.75 4.25736 4.75 5.5V18.5C4.75 19.7426 5.75736 20.75 7 20.75H17C18.2426 20.75 19.25 19.7426 19.25 18.5V5.5C19.25 4.25736 18.2426 3.25 17 3.25H7ZM6.25 5.5C6.25 5.08579 6.58579 4.75 7 4.75H17C17.4142 4.75 17.75 5.08579 17.75 5.5V18.5C17.75 18.9142 17.4142 19.25 17 19.25H7C6.58579 19.25 6.25 18.9142 6.25 18.5V5.5ZM9.5 7.75C9.08579 7.75 8.75 8.08579 8.75 8.5V9.5C8.75 9.91421 9.08579 10.25 9.5 10.25H14.5C14.9142 10.25 15.25 9.91421 15.25 9.5V8.5C15.25 8.08579 14.9142 7.75 14.5 7.75H9.5Z"
+                  fill=""
+                />
+              </svg>
+
+              <span
+                class="menu-item-text"
+                :class="sidebarToggle ? 'lg:hidden' : ''"
+              >
+                Data Pengepul
+              </span>
+            </a>
+          </li>
+          <!-- Menu Item Data Pengepul -->
+
+          <!-- Menu Item Data Artikel -->
+          <li>
+            <a
+              href="data-artikel.html"
+              @click="selected = (selected === 'DataArtikel' ? '':'DataArtikel')"
+              class="menu-item group"
+              :class=" (selected === 'DataArtikel') && (page === 'dataArtikel') ? 'menu-item-active' : 'menu-item-inactive'"
+            >
+              <svg
+                :class="(selected === 'DataArtikel') && (page === 'dataArtikel') ? 'menu-item-icon-active' : 'menu-item-icon-inactive'"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.5 3.25C4.25736 3.25 3.25 4.25736 3.25 5.5V18.5C3.25 19.7426 4.25736 20.75 5.5 20.75H18.5C19.7426 20.75 20.75 19.7426 20.75 18.5V5.5C20.75 4.25736 19.7426 3.25 18.5 3.25H5.5ZM4.75 5.5C4.75 5.08579 5.08579 4.75 5.5 4.75H18.5C18.9142 4.75 19.25 5.08579 19.25 5.5V18.5C19.25 18.9142 18.9142 19.25 18.5 19.25H5.5C5.08579 19.25 4.75 18.9142 4.75 18.5V5.5ZM7.75 7.75C7.75 7.33579 8.08579 7 8.5 7H15.5C15.9142 7 16.25 7.33579 16.25 7.75C16.25 8.16421 15.9142 8.5 15.5 8.5H8.5C8.08579 8.5 7.75 8.16421 7.75 7.75ZM7.75 10.25C7.75 9.83579 8.08579 9.5 8.5 9.5H13.5C13.9142 9.5 14.25 9.83579 14.25 10.25C14.25 10.6642 13.9142 11 13.5 11H8.5C8.08579 11 7.75 10.6642 7.75 10.25Z"
+                  fill=""
+                />
+              </svg>
+
+              <span
+                class="menu-item-text"
+                :class="sidebarToggle ? 'lg:hidden' : ''"
+              >
+                Data Artikel
+              </span>
+            </a>
+          </li>
+          <!-- Menu Item Data Artikel -->
+
+          <!-- Menu Item Daftar Harga -->
+          <li>
+            <a
+              href="daftar-harga.html"
+              @click="selected = (selected === 'DaftarHarga' ? '':'DaftarHarga')"
+              class="menu-item group"
+              :class=" (selected === 'DaftarHarga') && (page === 'daftarHarga') ? 'menu-item-active' : 'menu-item-inactive'"
+            >
+              <svg
+                :class="(selected === 'DaftarHarga') && (page === 'daftarHarga') ? 'menu-item-icon-active' : 'menu-item-icon-inactive'"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.5 3.25C4.25736 3.25 3.25 4.25736 3.25 5.5V18.5C3.25 19.7426 4.25736 20.75 5.5 20.75H18.5C19.7426 20.75 20.75 19.7426 20.75 18.5V5.5C20.75 4.25736 19.7426 3.25 18.5 3.25H5.5ZM4.75 5.5C4.75 5.08579 5.08579 4.75 5.5 4.75H18.5C18.9142 4.75 19.25 5.08579 19.25 5.5V18.5C19.25 18.9142 18.9142 19.25 18.5 19.25H5.5C5.08579 19.25 4.75 18.9142 4.75 18.5V5.5ZM8.75 8.75C8.75 8.33579 9.08579 8 9.5 8H14.5C14.9142 8 15.25 8.33579 15.25 8.75C15.25 9.16421 14.9142 9.5 14.5 9.5H9.5C9.08579 9.5 8.75 9.16421 8.75 8.75ZM8.75 11.75C8.75 11.3358 9.08579 11 9.5 11H12.5C12.9142 11 13.25 11.3358 13.25 11.75C13.25 12.1642 12.9142 12.5 12.5 12.5H9.5C9.08579 12.5 8.75 12.1642 8.75 12.5Z"
+                  fill=""
+                />
+              </svg>
+
+              <span
+                class="menu-item-text"
+                :class="sidebarToggle ? 'lg:hidden' : ''"
+              >
+                Daftar Harga
+              </span>
+            </a>
+          </li>
+          <!-- Menu Item Daftar Harga -->
+
+          <!-- Menu Item Permintaan Jadwal -->
+          <li>
+            <a
+              href="permintaan-jadwal.html"
+              @click="selected = (selected === 'PermintaanJadwal' ? '':'PermintaanJadwal')"
+              class="menu-item group"
+              :class=" (selected === 'PermintaanJadwal') && (page === 'permintaanJadwal') ? 'menu-item-active' : 'menu-item-inactive'"
+            >
+              <svg
+                :class="(selected === 'PermintaanJadwal') && (page === 'permintaanJadwal') ? 'menu-item-icon-active' : 'menu-item-icon-inactive'"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 2C8.41421 2 8.75 2.33579 8.75 2.75V3.75H15.25V2.75C15.25 2.33579 15.5858 2 16 2C16.4142 2 16.75 2.33579 16.75 2.75V3.75H18.5C19.7426 3.75 20.75 4.75736 20.75 6V19C20.75 20.2426 19.7426 21.25 18.5 21.25H5.5C4.25736 21.25 3.25 20.2426 3.25 19V6C3.25 4.75736 4.25736 3.75 5.5 3.75H7.25V2.75C7.25 2.33579 7.58579 2 8 2ZM4.75 6C4.75 5.58579 5.08579 5.25 5.5 5.25H18.5C18.9142 5.25 19.25 5.58579 19.25 6V19C19.25 19.4142 18.9142 19.75 18.5 19.75H5.5C5.08579 19.75 4.75 19.4142 4.75 19V6ZM7.75 9.75C7.75 9.33579 8.08579 9 8.5 9H15.5C15.9142 9 16.25 9.33579 16.25 9.75C16.25 10.1642 15.9142 10.5 15.5 10.5H8.5C8.08579 10.5 7.75 10.1642 7.75 10.5Z"
+                  fill=""
+                />
+              </svg>
+
+              <span
+                class="menu-item-text"
+                :class="sidebarToggle ? 'lg:hidden' : ''"
+              >
+                Permintaan Jadwal
+              </span>
+            </a>
+          </li>
+          <!-- Menu Item Permintaan Jadwal -->
+
+          <!-- Menu Item Daftar Transaksi -->
+          <li>
+            <a
+              href="daftar-transaksi.html"
+              @click="selected = (selected === 'DaftarTransaksi' ? '':'DaftarTransaksi')"
+              class="menu-item group"
+              :class=" (selected === 'DaftarTransaksi') && (page === 'daftarTransaksi') ? 'menu-item-active' : 'menu-item-inactive'"
+            >
+              <svg
+                :class="(selected === 'DaftarTransaksi') && (page === 'daftarTransaksi') ? 'menu-item-icon-active' : 'menu-item-icon-inactive'"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.5 3.25C4.25736 3.25 3.25 4.25736 3.25 5.5V18.5C3.25 19.7426 4.25736 20.75 5.5 20.75H18.5C19.7426 20.75 20.75 19.7426 20.75 18.5V5.5C20.75 4.25736 19.7426 3.25 18.5 3.25H5.5ZM4.75 5.5C4.75 5.08579 5.08579 4.75 5.5 4.75H18.5C18.9142 4.75 19.25 5.08579 19.25 5.5V18.5C19.25 18.9142 18.9142 19.25 18.5 19.25H5.5C5.08579 19.25 4.75 18.9142 4.75 18.5V5.5ZM7.75 7.75C7.75 7.33579 8.08579 7 8.5 7H15.5C15.9142 7 16.25 7.33579 16.25 7.75C16.25 8.16421 15.9142 8.5 15.5 8.5H8.5C8.08579 8.5 7.75 8.16421 7.75 7.75ZM7.75 10.75C7.75 10.3358 8.08579 10 8.5 10H13.5C13.9142 10 14.25 10.3358 14.25 10.75C14.25 11.1642 13.9142 11.5 13.5 11.5H8.5C8.08579 11.5 7.75 11.1642 7.75 11.5Z"
+                  fill=""
+                />
+              </svg>
+
+              <span
+                class="menu-item-text"
+                :class="sidebarToggle ? 'lg:hidden' : ''"
+              >
+                Daftar Transaksi
+              </span>
+            </a>
+          </li>
+          <!-- Menu Item Daftar Transaksi -->
+
           <!-- Menu Item Forms -->
           <li>
             <a
